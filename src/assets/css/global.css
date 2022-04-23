@@ -1,0 +1,15 @@
+/* 全局样式 */
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-width: 1366px;
+}
+.el-header {
+    padding: 0px;
+}
+.el-main {
+    overflow: visible !important;
+}
