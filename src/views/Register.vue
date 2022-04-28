@@ -29,7 +29,7 @@
                     ></el-input>
                 </el-form-item>
                 <el-form-item class="btns">
-                    <el-button type="primary" @click="register()">注册并登陆</el-button>
+                    <el-button type="primary" @click="register()">注册</el-button>
                 </el-form-item>
             </el-form>
         </div>
@@ -99,7 +99,7 @@ export default {
                     });
                     if (res.code == 0) {
                         this.$message.success('注册成功');
-                        this.$router.push('/home');
+                        this.$router.push('/homepage');
                     } else {
                         this.$message.error('信息出现错误');
                         console.log(res);

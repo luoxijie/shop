@@ -92,8 +92,8 @@ export default {
             name: this.$store.state.username || '',
             dialogVisible: false,
             loginForm: {
-                user_name: '',
-                password: '',
+                user_name: 'luoxijie',
+                password: 'a174634',
             },
             loginFormRules: {
                 user_name: [

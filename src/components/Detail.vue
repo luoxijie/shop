@@ -121,6 +121,7 @@ export default {
                     num: num,
                 };
                 this.$store.dispatch('add', obj);
+                this.$message.success('添加成功');
             }
         },
         // 返回首页

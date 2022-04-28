@@ -60,9 +60,14 @@
                                 <span>{{ item.type }}</span>
                                 <span>￥{{ item.toprice }}</span>
                                 <span>
-                                    <el-button type="danger" @click="payOrder(item)">
+                                    <el-button
+                                        type="danger"
+                                        v-show="item.type !== '已支付'"
+                                        @click="payOrder(item)"
+                                    >
                                         订单支付
                                     </el-button>
+                                    <el-button v-show="item.type == '已支付'">已支付</el-button>
                                 </span>
                             </div>
                             <div class="block">

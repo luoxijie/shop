@@ -11,12 +11,13 @@
                             placeholder="请输入内容"
                             v-model="keyword"
                             class="input-with-select"
-                            @keyup.enter.native="search()"
+                            @keyup.enter.native="search"
                         ></el-input>
                         <el-button
                             icon="el-icon-search"
                             class="searchbtn"
-                            @keyup.enter.native="search()"
+                            @click="search"
+                            @keyup.enter.native="search"
                         ></el-button>
                     </div>
                     <div class="list">
@@ -117,6 +118,7 @@ export default {
                     num: num,
                 };
                 this.$store.dispatch('add', obj);
+                this.$message.success('添加成功');
             }
         },
         // 获取更多
@@ -135,6 +137,7 @@ export default {
         },
         // 点击搜索
         async search() {
+            console.log(1);
             this.page = 1;
             this.list = [];
             this.more = false;

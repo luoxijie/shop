@@ -9,7 +9,7 @@ import './assets/css/global.css'
 Vue.config.productionTip = false
 
 // 配置请求根路径
-axios.defaults.baseURL = "http://localhost:7000";
+axios.defaults.baseURL = "http://121.37.111.7:7000";
 Vue.prototype.$http = axios;
 
 new Vue({

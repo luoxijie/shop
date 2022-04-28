@@ -152,6 +152,7 @@ export default {
                     token,
                 };
                 this.$store.dispatch('order', obj);
+                this.$message.success('商城订单成功');
             } else {
                 this.$message.warning('请先登录');
             }
