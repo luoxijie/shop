@@ -1,5 +1,5 @@
 <template>
-    <div id="head">
+    <div id="preamble">
         <div class="img" @click="toHome()"></div>
         <div class="txt">欢迎来到花花的世界</div>
         <el-menu
@@ -84,7 +84,7 @@
 
 <script>
 export default {
-    name: 'header',
+    name: 'preamble',
     props: ['index'],
     data() {
         return {
@@ -206,7 +206,7 @@ export default {
 </script>
 
 <style scoped>
-#head {
+#preamble {
     display: flex;
     background-color: aqua;
     justify-content: space-between;

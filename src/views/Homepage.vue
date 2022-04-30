@@ -2,7 +2,7 @@
     <div id="homepage">
         <el-container>
             <el-header>
-                <Head :index="index"></Head>
+                <Preamble :index="index"></Preamble>
             </el-header>
             <el-main>
                 <div class="home" v-show="id == 0">
@@ -52,21 +52,21 @@
                 </div>
             </el-main>
             <el-footer>
-                <Foot></Foot>
+                <Bottom></Bottom>
             </el-footer>
         </el-container>
     </div>
 </template>
 
 <script>
-import Head from '../components/Header.vue';
-import Foot from '../components/Footer.vue';
+import Preamble from '../components/Preamble.vue';
+import Bottom from '../components/Bottom.vue';
 import Detail from '../components/Detail.vue';
 export default {
     name: 'Homepage',
     components: {
-        Head,
-        Foot,
+        Preamble,
+        Bottom,
         Detail,
     },
     data() {

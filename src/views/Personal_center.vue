@@ -2,7 +2,7 @@
     <div class="personal_center">
         <el-container>
             <el-header>
-                <Head :index="index"></Head>
+                <Preamble :index="index"></Preamble>
             </el-header>
             <el-main>
                 <div class="personal" v-if="this.$store.state.username != '' && id == 0">
@@ -151,14 +151,14 @@
 </template>
 
 <script>
-import Head from '../components/Header.vue';
-import Foot from '../components/Footer.vue';
+import Preamble from '../components/Preamble.vue';
+import Bottom from '../components/Bottom.vue';
 import Detail from '../components/Detail.vue';
 export default {
     name: 'Personal_center',
     components: {
-        Head,
-        Foot,
+        Preamble,
+        Bottom,
         Detail,
     },
     data() {

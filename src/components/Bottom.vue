@@ -1,6 +1,6 @@
 <template>
-    <div id="foot">
-        <div class="foot">
+    <div id="bottom">
+        <div class="bottom">
             <p>{{ footerMsgCopyright }}{{ footerMsgName }}</p>
         </div>
     </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'footer',
+    name: 'bottom',
     data() {
         return {
             // 版权说明的文字
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-.foot {
+.bottom {
     text-align: center;
 }
 </style>
